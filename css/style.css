@@ -10,7 +10,9 @@ light grey: ##efefef; innactive text fields;
 
 Green: #13AA71; "tablets" graph data
 Blue-green: #41817F; "phones" graph data
+
 */
+
 
 
 body {
@@ -26,6 +28,13 @@ a:link {
   text-decoration: none;
 }
 
+button {
+  border: 1px solid red;
+  background: none;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+}
 /*---------Header styles--------*/
 .header {
   background: #565595;
@@ -41,7 +50,7 @@ a:link {
 .logo {
   color: #ffffff;
   font-size: 1.2rem;
-  padding: 0rem 1rem;
+  margin: 0rem 1rem;
 }
 
 .light {
@@ -58,7 +67,7 @@ a:link {
 .icon-bell {
   height: 1.25rem;
   width: 1.25rem;
-  padding: 0rem 1rem;
+  margin: 0rem 1rem;
 }
 
 .user-info {
@@ -80,6 +89,16 @@ a:link {
 
 }
 
+header a {
+  transition: background-color .3s;
+  padding: .2rem;
+  border-radius: 3px;
+}
+
+
+header a:hover {
+  background-color: #13AA71;
+}
 /*-------------Nav Styles------------------------*/
 
 nav {
@@ -93,10 +112,19 @@ nav {
   height: 1.5rem;
   width: 1.5rem;
   padding: .5rem;
-  opacity: .7;
+  opacity: .6;
 }
 
+a.nav-icon {
+  transition: opacity 0.3s;
+  transition: border-left 0.3s;
+  border: 3px outset transparent;
 
+}
+a.nav-icon:hover {
+  opacity: 1.0;
+  border-left: 3px outset #13AA71;
+}
 /*-------------Banner Styles------------------------*/
 
 .wrapper-top {
@@ -123,6 +151,7 @@ h1 {
 .search {
   margin-right: .5rem;
   height: 2em;
+  width: 90%;
 }
 
 /*---------------Alert div styles-----------------*/
@@ -133,7 +162,11 @@ h1 {
   font-size: .8rem;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
+  width: 98%;
+  height: 95%;
+  margin: .5rem auto;
+  border-radius: 3px;
 }
 
 h3 {
@@ -141,8 +174,32 @@ h3 {
   padding-left: 1rem;
 }
 
+.alert-text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 .alert {
   padding: .5rem 1rem;
+}
+
+.close {
+  color: rgba(255,255,255,1.0);
+  font-size: 1rem;
+  padding: .2em .35em;
+  margin: .5em;
+  text-align: center;
+  font-weight: 100;
+  /*transition: all .3s ease-out;*/
+  border: 1px solid transparent;
+  border-radius: 100%;
+}
+
+.close:hover {
+  border: 1px solid;
+  background:  rgba(255,255,255,1.0);
+  color: #565595;
 }
 
 /*-----------Media Queries for Medium Screen Size---------------*/
