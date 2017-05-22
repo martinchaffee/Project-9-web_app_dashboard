@@ -1,7 +1,7 @@
 /*--------Colors---------
 Paletton.com 1400u0kllllaFw0g0qFqFg0w0aF
 ---     ---
-Main Purple: #565595; For header, alert, graphs, socmed icons, newmemb email, send/save buttons, on toggles;
+Main Purple: #565595; rgba(86,85,149,1.0)For header, alert, graphs, socmed icons, newmemb email, send/save buttons, on toggles;
 Dark Purple: #1B1A59; rgba(27,26,89,1.0) For NavBar
 Slate Grey: rgba(78,86,93,1.0)
 Dark Grey: #B2B2B2; cancel button; app content borders; body text;
@@ -18,6 +18,24 @@ Blue-green: #41817F; "phones" graph data
 body {
   font-family: 'Lato', sans-serif;
   color: rgba(78,86,93,1.0);
+}
+
+h1 {
+  font-size: 1em;
+  font-weight: 400;
+  padding: .3rem 1rem;
+  width: 20%;
+}
+
+h2 {
+  font-size: .75rem;
+  text-transform: uppercase;
+  color: rgba(78,86,93,0.8);
+}
+
+h3 {
+  font-size: .8rem;
+  padding-left: 1rem;
 }
 
 ul {
@@ -132,13 +150,6 @@ a.nav-icon:hover {
   width: 100%;
 }
 
-h1 {
-  font-size: 1em;
-  font-weight: 400;
-  padding: .3rem 1rem;
-  width: 20%;
-}
-
 .wrapper-search {
   display: flex;
   align-items: center;
@@ -167,11 +178,6 @@ h1 {
   height: 95%;
   margin: .5rem auto;
   border-radius: 3px;
-}
-
-h3 {
-  font-size: .8rem;
-  padding-left: 1rem;
 }
 
 .alert-text {
@@ -204,16 +210,24 @@ h3 {
 
 /*-----------Main Content Styles---------------*/
 
-h2 {
-  font-size: .75rem;
-  text-transform: uppercase;
-  color: rgba(78,86,93,0.8);
+.card {
+  /*border: 1px solid #B2B2B2;*/
+  border-top: none;
+  height: 10em;
+  border: 1px solid green;
+  display: flex;
+  flex-direction: column;
 }
 
-.card {
-  border: 1px solid #B2B2B2;
-  border-top: none;
+.card h2 {
+  border: 1px solid gold;
+  flex-grow: 1;
 }
+
+.chart {
+  border: 1px solid red;
+  flex-grow: 8;
+  }
 /*-----------Media Queries for Medium Screen Size---------------*/
 @media screen and (min-width: 768px) {
 
