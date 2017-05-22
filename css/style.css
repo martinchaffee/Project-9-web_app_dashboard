@@ -1,0 +1,155 @@
+/*--------Colors---------
+Paletton.com 1400u0kllllaFw0g0qFqFg0w0aF
+---     ---
+Main Purple: #565595; For header, alert, graphs, socmed icons, newmemb email, send/save buttons, on toggles;
+Dark Purple: #1B1A59; rgba(27,26,89,1.0) For NavBar
+Slate Grey: rgba(78,86,93,1.0)
+Dark Grey: #B2B2B2; cancel button; app content borders; body text;
+medium grey: #e7e7e7; main searchbar background;
+light grey: ##efefef; innactive text fields;
+
+Green: #13AA71; "tablets" graph data
+Blue-green: #41817F; "phones" graph data
+*/
+
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: rgba(78,86,93,1.0);
+}
+
+ul {
+  list-style: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+/*---------Header styles--------*/
+.header {
+  background: #565595;
+  color: #ffffff;
+  font-weight: 300;
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  color: #ffffff;
+  font-size: 1.2rem;
+  padding: 0rem 1rem;
+}
+
+.light {
+  font-weight: 100;
+  opacity: 0.7;
+}
+
+.user-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.icon-bell {
+  height: 1.25rem;
+  width: 1.25rem;
+  padding: 0rem 1rem;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  padding: 0rem 1rem;
+  border-left: 1px solid rgba(27,26,89,0.3);
+}
+
+.user-profile {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 100%;
+}
+
+.user-name {
+  padding: 0rem .5rem;
+  font-weight: 300;
+
+}
+
+/*-------------Nav Styles------------------------*/
+
+nav {
+  background-color: rgba(27,26,89,1.0);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav-icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  padding: .5rem;
+  opacity: .7;
+}
+
+
+/*-------------Banner Styles------------------------*/
+
+.wrapper-top {
+  display: flex;
+  width: 100%;
+}
+
+h1 {
+  font-size: 1em;
+  font-weight: 400;
+  padding: .3rem 1rem;
+  width: 20%;
+}
+
+.wrapper-search {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #e7e7e7;
+  border: 1px solid rgba(78,86,93,0.3);
+  width: 80%;
+}
+
+.search {
+  margin-right: .5rem;
+  height: 2em;
+}
+
+/*---------------Alert div styles-----------------*/
+.wrapper-alert {
+  background-color: #565595;
+  color: rgba(255,255,255,0.8);
+  font-weight: 200;
+  font-size: .8rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+h3 {
+  font-size: .8rem;
+  padding-left: 1rem;
+}
+
+.alert {
+  padding: .5rem 1rem;
+}
+
+/*-----------Media Queries for Medium Screen Size---------------*/
+@media screen and (min-width: 768px) {
+
+
+
+
+/*-----------Media Queries for Large Screen Size---------------*/
+@media screen and (min-width: 1024px) {
