@@ -1,15 +1,15 @@
 /*--------Colors---------
 Paletton.com 1400u0kllllaFw0g0qFqFg0w0aF
 ---     ---
-Main Purple: #565595; rgba(86,85,149,1.0)For header, alert, graphs, socmed icons, newmemb email, send/save buttons, on toggles;
-Dark Purple: #1B1A59; rgba(27,26,89,1.0) For NavBar
+Main Purple: #6D6DB6; rgba(109, 109, 182, 1)For header, alert, graphs, socmed icons, newmemb email, send/save buttons, on toggles;
+Dark Purple: #1B1A59; rgba(33, 32, 111, 1) For NavBar
 Slate Grey: rgba(78,86,93,1.0)
 Dark Grey: #B2B2B2; cancel button; app content borders; body text;
 medium grey: #e7e7e7; main searchbar background;
-light grey: ##efefef; innactive text fields;
+light grey: #efefef; innactive text fields;
 
-Green: #13AA71; "tablets" graph data
-Blue-green: #41817F; "phones" graph data
+Green: #7CDA96; rgba(124, 218, 150, 1) "tablets" graph data; active line button
+Blue-green: 	#6FA7B8; rgba(111, 167, 184, 1); "phones" graph data; line button hover
 
 */
 
@@ -30,10 +30,10 @@ h1 {
 h2 {
   font-size: .75rem;
   text-transform: uppercase;
-  color: rgba(78,86,93,0.8);
+  color: rgba(78,86,93,0.7);
 }
 
-h3 {
+h4 {
   font-size: .8rem;
   padding-left: 1rem;
 }
@@ -47,7 +47,7 @@ a:link {
 }
 
 button {
-  border: 1px solid red;
+  border: none;
   background: none;
   cursor: pointer;
   text-align: center;
@@ -55,7 +55,7 @@ button {
 }
 /*---------Header styles--------*/
 .header {
-  background: #565595;
+  background: rgba(109, 109, 182, 1);
   color: #ffffff;
   font-weight: 300;
   height: 5rem;
@@ -115,12 +115,12 @@ header a {
 
 
 header a:hover {
-  background-color: #13AA71;
+  background-color: rgba(65,160,127,1.0);
 }
 /*-------------Nav Styles------------------------*/
 
 nav {
-  background-color: rgba(27,26,89,1.0);
+  background-color: rgba(33, 32, 111, 1);
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -141,7 +141,7 @@ a.nav-icon {
 }
 a.nav-icon:hover {
   opacity: 1.0;
-  border-left: 3px outset #13AA71;
+  border-left: 3px outset rgba(65,160,127,1.0);
 }
 /*-------------Banner Styles------------------------*/
 
@@ -167,7 +167,7 @@ a.nav-icon:hover {
 
 /*---------------Alert div styles-----------------*/
 .wrapper-alert {
-  background-color: #565595;
+  background-color: rgba(109, 109, 182, 1);
   color: rgba(255,255,255,0.8);
   font-weight: 200;
   font-size: .8rem;
@@ -210,24 +210,76 @@ a.nav-icon:hover {
 
 /*-----------Main Content Styles---------------*/
 
-.card {
-  /*border: 1px solid #B2B2B2;*/
-  border-top: none;
-  height: 10em;
-  border: 1px solid green;
+.line-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.btn-line {
+  border-radius: 25px;
+  font-size: 0.7em;
+  transition: background-color .1s, color .1s;
+  color: rgba(78,86,93,0.7);
+  margin-left: 5px;
+  padding: 3px 10px;
+}
+
+.btn-line:hover {
+  background-color: rgba(111, 167, 184, 1);
+  color: #ffffff;
+}
+
+/*-----------Social Stats Styles---------------*/
+
+
+
+.soc-group {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
 }
 
-.card h2 {
-  border: 1px solid gold;
-  flex-grow: 1;
+.soc-badge {
+  background-color: #efefef;
+  border: 1px solid #B2B2B2;
+  border-radius: 3px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 70%;
+  margin: .3rem auto;
 }
 
-.chart {
-  border: 1px solid red;
-  flex-grow: 8;
-  }
+.soc-icon {
+  height: 2rem;
+  width: 2rem;
+  padding: .5rem;
+  background-color: rgba(109, 109, 182, 1);
+  border-radius: 100%;
+  margin: .5rem;
+}
+
+h3 {
+  color: rgba(109, 109, 182, 1);
+  font-size: .9rem;
+  margin: auto;
+  display: inline-block;
+  margin-left: 0;
+}
+
+.soc-stats {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 2rem;
+}
+
+.numbers {
+  font-size: 1.8em;
+  font-weight: 300;
+}
 /*-----------Media Queries for Medium Screen Size---------------*/
 @media screen and (min-width: 768px) {
 
