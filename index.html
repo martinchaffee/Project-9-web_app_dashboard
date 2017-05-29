@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700&amp;subset=latin-ext" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.bundle.min.js"></script>
   </head>
@@ -42,7 +42,7 @@
     <div class="wrapper-top">
       <h1>Dashboard</h1>
       <div class="wrapper-search">
-        <input id="searchbox" type="text" class="search" placeholder="Search">
+        <input id="searchbox" type="text" class="search" placeholder="Search"><span class="fa fa-search"></span>
       </div>
     </div>
       <div class="wrapper-alert">
@@ -209,14 +209,14 @@
         </div>
       </section>
 
-
-
-
-
 <!-- Messages & Settings Sections -->
       <section class="messages">
-        <h2>Message Users</h2>
-
+        <h2>Message User</h2>
+        <form id="message-user">
+          <input id="searchbox-user" type="text" class="search" placeholder="Search for User">
+          <textarea id="message" name="message_user" placeholder="Message for User"></textarea>
+          <button type="submit" class="go">Send</button>
+        </form>
       </section>
 
       <section class="settings">
