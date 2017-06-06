@@ -8,7 +8,10 @@ var desktopColor = mainColor;
 var tabletsColor = "rgba(124, 218, 150, 1)";
 
 
-// Glboal chart stylings
+
+// Global chart stylings
+
+
 
 // Canvasses from DOM
 var trafficHourlyLine = document.getElementById('traffic-hourly');
