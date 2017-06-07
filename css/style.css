@@ -65,6 +65,10 @@ section {
   width: 98%;
   margin: auto;
 }
+
+input, select {
+ font-size: .8rem;
+}
 /*---------Header styles--------*/
 .header {
   background: rgba(109, 109, 182, 1);
@@ -116,7 +120,6 @@ section {
 .user-name {
   padding: 0rem .5rem;
   font-weight: 300;
-
 }
 
 header a {
@@ -221,7 +224,7 @@ a.nav-icon:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 98%;
+  width: 100%;
   height: 95%;
   margin: .5rem auto;
   border-radius: 3px;
@@ -418,14 +421,12 @@ textarea::-moz-placeholder {
   padding-left: .75rem;
   padding-top: .5rem;
   font-family: 'Lato', sans-serif;
-  font-size: .8rem;
 }
 
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
   color: rgba(178, 178, 178, 1);
   font-family: 'Lato', sans-serif;
-  font-size: .8rem;
 }
 
 #message-user {
@@ -440,7 +441,6 @@ textarea::-webkit-input-placeholder {
   margin: .5rem auto;
   border-radius: 4px;
   padding: .5rem .5rem;
-  font-size: .8rem;
   width: 100%;
 }
 
@@ -472,6 +472,8 @@ button.go:hover {
 .settings label {
   font-size: .8rem;
   margin-bottom: .3rem;
+  display: flex;
+  flex-direction: column;
 }
 
 #save {
@@ -498,29 +500,51 @@ button.go:hover {
   text-align: center;
 }
 
-.select-style {
-    border: 1px solid #ccc;
-    width: 100%;
-    border-radius: 4px;
-    overflow: hidden;
-    background: #fafafa url("img/icon-select.png") no-repeat 90% 50%;
+.selectdiv {
+  position: relative;
+  float: left;
 }
 
-.select-style select {
-    padding: 5px 8px;
-    width: 130%;
-    height: 2rem;
-    border: none;
-    box-shadow: none;
-    background: transparent;
-    background-image: none;
-    -webkit-appearance: none;
-    font-size: .7rem;
-    color: rgba(127, 138, 148, 1.0);
+.selectdiv:after {
+    content: '\f107';
+    font: normal normal normal 1.75rem FontAwesome;
+    right: .5rem;
+    top: .4rem;
+    height: 3rem;
+    padding: 0;
+    position: absolute;
+    pointer-events: none;
 }
 
-.select-style select:focus {
-    outline: none;
+/* IE11 hide native button */
+select::-ms-expand {
+display: none;
+}
+
+
+.selectdiv select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+  width: 100%;
+  height: 50px;
+  float: right;
+  margin: 5px 0px;
+  padding: 0px 24px;
+  padding-left: .5rem;
+  height: 2rem;
+  color: rgba(127, 138, 148, 1.0);
+  background-color: #e7e7e7;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -ms-word-break: normal;
+  word-break: normal;
+}
+
+.selectdiv label {
+  display: none;
 }
 
 option#placeholder{
@@ -530,6 +554,15 @@ option#placeholder{
 .button-wrapper {
   display: flex;
   justify-content: space-between;
+  clear: left;
+}
+
+#save {
+  margin-left: 0;
+}
+
+#cancel {
+  margin-right: 0;
 }
 #save:hover {
   background-color: rgba(124, 218, 150, 1);

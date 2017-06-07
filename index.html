@@ -233,8 +233,10 @@
           <form id="settings">
             <label for="notifications">Send Email Notifications</label><input type="checkbox" id="notifications" value="send_notifications" name="email"><br>
             <label for="public">Set Profile to Public</label><input type="checkbox" id="public" value="set_profile" name="public"><br>
-            <label for"timezone">Select Timezone</label>
-            <div class="select-style">
+<!-- Select Menu-->
+
+            <div class="selectdiv">
+              <label for"timezone">Select Timezone</label>
               <select id="timezone" name="timezone">
                 <option id="placeholder">Select Timezone</option>
                 <option timeZoneId="1" gmtAdjustment="GMT-12:00" useDaylightTime="0" value="-12">(GMT-12:00) International Date Line West</option>
@@ -320,6 +322,7 @@
               	<option timeZoneId="81" gmtAdjustment="GMT+12:00" useDaylightTime="0" value="12">(GMT+12:00) Fiji, Kamchatka, Marshall Is.</option>
               	<option timeZoneId="82" gmtAdjustment="GMT+13:00" useDaylightTime="0" value="13">(GMT+13:00) Nuku'alofa</option>
               </select>
+              <!-- <span><i class="fa fa-angle-right"></span> -->
             </div>
             <div class="button-wrapper">
               <button type="submit" id="save">Save</button>
