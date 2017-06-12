@@ -216,7 +216,7 @@ a.nav-icon:hover {
   color: white;
 }
 /*---------------Alert div styles-----------------*/
-.wrapper-alert {
+#wrapper-alert {
   background-color: rgba(109, 109, 182, 1);
   color: rgba(255,255,255,0.8);
   font-weight: 200;
@@ -240,7 +240,7 @@ a.nav-icon:hover {
   padding: .5rem 1rem;
 }
 
-.close {
+#close {
   color: rgba(255,255,255,1.0);
   font-size: 1rem;
   padding: .2em .35em;
@@ -252,7 +252,7 @@ a.nav-icon:hover {
   border-radius: 100%;
 }
 
-.close:hover {
+#close:hover {
   border: 1px solid;
   background:  rgba(255,255,255,1.0);
   color: #565595;
@@ -275,12 +275,13 @@ a.nav-icon:hover {
   padding: 3px 10px;
 }
 
-.btn-line:hover {
+.btn-line:hover,
+.btn-line:focus {
   background-color: rgba(124, 218, 150, 1);
   color: #ffffff;
 }
 
-.chart-container {
+#chart-container {
   width: 100%;
   height: 20rem;
 }
