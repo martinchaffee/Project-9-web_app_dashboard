@@ -11,7 +11,12 @@ var tabletsColor = "rgba(124, 218, 150, 1)";
 
 // Global chart stylings
 
-
+var lineOptions = {
+  maintainAspectRatio: false,
+  legend: {
+    display: false
+  },
+};
 
 // Canvasses from DOM
 var trafficHourlyLine = document.getElementById('traffic-hourly');
@@ -27,11 +32,7 @@ var mobileUsersDonut = document.getElementById('mobile-users');
   // Hourly Line Charts
 var trafficHourlyChart = new Chart(trafficHourlyLine, {
   type: 'line',
-  options: {
-    legend: {
-      display: false
-    },
-  },
+  options: lineOptions,
   data: {
     labels: ['0:00', '2:00', '4:00', '6:00', '8:00', '10:00', '12:00', '14:00', '16:00', '18:00', '20:00', '22:00'],
     datasets: [
@@ -54,11 +55,7 @@ var trafficHourlyChart = new Chart(trafficHourlyLine, {
 // Daily Line Chart
 var trafficDailyChart = new Chart(trafficDailyLine, {
   type: 'line',
-  options: {
-    legend: {
-      display: false
-    },
-  },
+  options: lineOptions,
   data: {
     labels: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
     datasets: [
@@ -80,11 +77,7 @@ var trafficDailyChart = new Chart(trafficDailyLine, {
 
 var trafficWeeklyChart = new Chart(trafficWeeklyLine, {
   type: 'line',
-  options: {
-    legend: {
-      display: false
-    },
-  },
+  options: lineOptions,
   data: {
     labels: ['16-22', '23-29', '30-5', '6-12', '13-19', '20-26', '27-3', '4-10', '11-17', '18-24', '25-31'],
     datasets: [
@@ -107,11 +100,7 @@ var trafficWeeklyChart = new Chart(trafficWeeklyLine, {
 
 var trafficMonthlyChart = new Chart(trafficMonthlyLine, {
   type: 'line',
-  options: {
-    legend: {
-      display: false
-    },
-  },
+  options: lineOptions,
   data: {
     labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
     datasets: [
@@ -134,6 +123,7 @@ var trafficMonthlyChart = new Chart(trafficMonthlyLine, {
 var dailyTrafficBar = new Chart(trafficDailyBar, {
   type: 'bar',
   options: {
+  maintainAspectRatio: false,
     legend: {
       display: false
     },
@@ -156,8 +146,10 @@ var dailyTrafficBar = new Chart(trafficDailyBar, {
 var mobileUsers = new Chart(mobileUsersDonut, {
   type: 'doughnut',
   options: {
+  maintainAspectRatio: false,
     legend: {
-      // position: 'right',
+      position: 'right',
+      padding: 50,
     },
   },
   data: {
