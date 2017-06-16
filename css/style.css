@@ -61,10 +61,14 @@ button {
   color: rgba(127, 138, 148, 1.0);
 }
 
+main {
+  width: 100%;
+}
+
 section {
   width: 100%;
-  margin: auto;
-  padding: .75rem 0;
+  margin: 0 auto;
+  padding: .75rem 1rem;
   border-bottom: 1px solid rgba(178, 178, 178, 1);
 }
 
@@ -227,7 +231,7 @@ a.nav-icon:hover {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  height: 95%;
+  height: 3rem;
   margin: .5rem auto;
   border-radius: 3px;
 }
@@ -291,11 +295,6 @@ a.nav-icon:hover {
   width: 100%;
 }
 
-.card {
-  display: flex;
-  flex-direction: column;
-}
-
 /*-----------Social Stats Styles---------------*/
 
 .soc-group {
@@ -316,8 +315,8 @@ a.nav-icon:hover {
 }
 
 .soc-icon {
-  height: 2rem;
-  width: 2rem;
+  height: 2.5rem;
+  width: 2.5rem;
   padding: .5rem;
   background-color: rgba(109, 109, 182, 1);
   border-radius: 100%;
@@ -337,12 +336,13 @@ h3 {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  margin-left: 2rem;
+  margin: 1rem 2rem;
 }
 
 .numbers {
   font-size: 1.8em;
   font-weight: 300;
+  color: rgba(102, 113, 123, 1);
 }
 
 /*-----------New Member Section---------------*/
@@ -436,6 +436,7 @@ textarea::-webkit-input-placeholder {
 
 #message-user {
   margin: 0 auto;
+  width: 100%;
 }
 
 #message-user input,
@@ -582,8 +583,54 @@ option#placeholder{
 /*-----------Media Queries for Medium Screen Size---------------*/
 @media screen and (min-width: 768px) {
 
+.soc-group {
+  flex-direction: row;
+  justify-content: space-around;
+}
 
+.soc-badge {
+  width: 30%;
+}
 
+.wrapper {
+  display: flex;
+}
 
+.wrapper section:first-of-type {
+  border-right: 1px solid rgba(178, 178, 178, 1);
+}
+
+section.settings{
+ border-bottom: 1px solid rgba(178, 178, 178, 1);
+}
+}
 /*-----------Media Queries for Large Screen Size---------------*/
 @media screen and (min-width: 1024px) {
+  .wrapper-desktop {
+     display: flex;
+     height: 100%;
+     width: 100%;
+   }
+
+   main {
+     /*width: auto;*/
+   }
+
+   nav {
+     flex-direction: column;
+     height: auto;
+     justify-content: flex-start;
+   }
+
+  .nav-icon {
+    height: 3rem;
+    width: 3rem;
+    padding: .5rem;
+    opacity: .6;
+  }
+}
+/*nav {
+  align-items: center;
+  justify-content: space-around;
+  height: 3rem;
+}*/
