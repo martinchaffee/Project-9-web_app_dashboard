@@ -475,7 +475,9 @@ button.go:hover {
 
 /*-----------Settings Section---------------*/
  section.settings{
-  border-bottom: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .settings label {
@@ -485,6 +487,12 @@ button.go:hover {
   flex-direction: column;
 }
 
+.settings form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
 #save {
   width: 45%;
   background-color: rgba(109, 109, 182, 1);
@@ -600,8 +608,9 @@ option#placeholder{
   border-right: 1px solid rgba(178, 178, 178, 1);
 }
 
-section.settings{
- border-bottom: 1px solid rgba(178, 178, 178, 1);
+section.messages,
+section.settings {
+ border-bottom: none;
 }
 }
 /*-----------Media Queries for Large Screen Size---------------*/
