@@ -613,13 +613,14 @@ section.settings{
    }
 
    main {
-     /*width: auto;*/
+     width: 92%;
    }
 
    nav {
      flex-direction: column;
      height: auto;
      justify-content: flex-start;
+     width: 8%;
    }
 
   .nav-icon {
