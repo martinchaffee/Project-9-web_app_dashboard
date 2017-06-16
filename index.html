@@ -238,8 +238,29 @@
           <section class="settings">
             <h2>Settings</h2>
               <form id="settings">
-                <label for="notifications">Send Email Notifications</label><input type="checkbox" id="notifications" value="send_notifications" name="email"><br>
-                <label for="public">Set Profile to Public</label><input type="checkbox" id="public" value="set_profile" name="public"><br>
+                <div class="wrapper-switch">
+                  <span class="switch-span">Send Email Notifications</span>
+                  <div class="onoffswitch">
+                      <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="notifications" value="send_notifications" name="email" checked>
+                      <label class="onoffswitch-label" for="notifications">
+                          <span class="onoffswitch-inner"></span>
+                          <span class="onoffswitch-switch"></span>
+                      </label>
+                  </div>
+                <div>
+                <!-- <div class="wrapper-switch"> -->
+                  <span class="switch-span">Set Profile to Public</span>
+                  <div class="onoffswitch">
+                      <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="public" value="set_profile" name="public" checked>
+                      <label class="onoffswitch-label" for="public">
+                          <span class="onoffswitch-inner"></span>
+                          <span class="onoffswitch-switch"></span>
+                      </label>
+                  </div>
+                <!-- </div> -->
+
+
+
     <!-- Select Menu-->
 
                 <div class="selectdiv">

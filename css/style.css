@@ -493,29 +493,69 @@ button.go:hover {
   justify-content: space-between;
   height: 100%;
 }
-#save {
-  width: 45%;
-  background-color: rgba(109, 109, 182, 1);
-  color: #ffffff;
-  text-transform: uppercase;
-  height: 2.5rem;
-  margin: .5rem auto;
-  border-radius: 4px;
-  transition: background-color .1s;
-  text-align: center;
+
+/****************ON-OFF Switch***************/
+
+.wrapper-switch {
+
 }
-#cancel {
-  background-color: rgba(178, 178, 178, 1);
-  transition: background-color .1s;
-  width: 45%;
-  color: #ffffff;
-  text-transform: uppercase;
-  height: 2.5rem;
-  margin: .5rem auto;
-  border-radius: 4px;
-  transition: background-color .1s;
-  text-align: center;
+
+.switch-span {
+  display: inline-block;
+  width: 10rem;
+  font-size: .75rem;
+  margin: auto;
+
 }
+
+.onoffswitch {
+  display: inline-block;
+    position: relative; width: 95px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #E3E3E3; border-radius: 36px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 27px; padding: 0; line-height: 27px;
+    font-size: 15px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "ON";
+    padding-left: 10px;
+    background-color: #B2B2B2; color: #666666;
+}
+.onoffswitch-inner:after {
+    content: "OFF";
+    padding-right: 10px;
+    background-color: #B2B2B2; color: #FFFFFF;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 29px; margin: -1px;
+    background: #A1A1A1;
+    position: absolute; top: 0; bottom: 0;
+    right: 64px;
+    border: 2px solid #E3E3E3; border-radius: 36px;
+    transition: all 0.3s ease-in 0s;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px;
+    background-color: #FFFFFF;
+}
+
 
 .selectdiv {
   position: relative;
@@ -575,10 +615,29 @@ option#placeholder{
 }
 
 #save {
+  width: 45%;
+  background-color: rgba(109, 109, 182, 1);
+  color: #ffffff;
+  text-transform: uppercase;
+  height: 2.5rem;
+  margin: .5rem auto;
+  border-radius: 4px;
+  transition: background-color .1s;
+  text-align: center;
   margin-left: 0;
 }
 
 #cancel {
+  background-color: rgba(178, 178, 178, 1);
+  transition: background-color .1s;
+  width: 45%;
+  color: #ffffff;
+  text-transform: uppercase;
+  height: 2.5rem;
+  margin: .5rem auto;
+  border-radius: 4px;
+  transition: background-color .1s;
+  text-align: center;
   margin-right: 0;
 }
 #save:hover {
