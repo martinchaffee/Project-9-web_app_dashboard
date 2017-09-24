@@ -1,0 +1,37 @@
+/*-----------Message User Section---------------*/
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: $color-text;
+  padding-left: .75rem;
+  padding-top: .5rem;
+  font-family: 'Lato', sans-serif;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: $color-text;
+  font-family: 'Lato', sans-serif;
+}
+
+#message-user {
+  margin: 0 auto;
+  width: 100%;
+}
+
+#message-user input,
+#message-user textarea {
+  background-color: $color-bg;
+  border: 1px solid $color-border;
+  color: $color-text;
+  margin: .5rem auto;
+  border-radius: 4px;
+  padding: .5rem .5rem;
+  width: 100%;
+}
+
+
+#message-user textarea {
+  height: 10rem;
+  resize: none;
+}

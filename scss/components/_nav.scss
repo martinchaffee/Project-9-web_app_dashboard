@@ -1,3 +1,29 @@
 //============================================
 // Nav Styles
 //============================================
+
+nav {
+  background-color: $color-primary-dark;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 3rem;
+}
+
+.nav-icon {
+  height: 3rem;
+  width: 3rem;
+  padding: .5rem;
+  opacity: .6;
+}
+
+a.nav-icon {
+  transition: opacity 0.3s;
+  transition: border-left 0.3s;
+  border: 3px outset transparent;
+
+}
+a.nav-icon:hover {
+  opacity: 1.0;
+  border-left: 3px outset $color-secondary;
+}

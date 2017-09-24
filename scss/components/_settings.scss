@@ -1,0 +1,21 @@
+//-----------Settings Section---------------
+
+ section.settings{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.settings label {
+  font-size: .8rem;
+  margin-bottom: .3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.settings form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}

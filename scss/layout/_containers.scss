@@ -3,3 +3,73 @@
 //============================================
 
 // Main Content
+
+main {
+  width: 100%;
+}
+
+section {
+  width: 100%;
+  margin: 0 auto;
+  padding: .75rem 1rem;
+  border-bottom: 1px solid $color-border;
+}
+
+//
+
+//-------------Banner Styles------------------------
+
+.wrapper-top {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.wrapper-top h1 {
+  padding: .3rem 1rem;
+}
+
+.wrapper-search {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: $color-bg;
+  border: 1px solid rgba(78,86,93,0.3);
+  width: 90%;
+}
+
+.search {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border: 1px solid $color-border;
+  border-radius: 4px;
+  margin-right: 1rem;
+  width: 90%;
+}
+
+#searchbox {
+  margin-right: .5rem;
+  height: 2rem;
+  width: 85%;
+  border: none;
+  background: transparent;
+  padding-left: .5rem;
+}
+
+.search button {
+  padding: 0rem .5rem;
+  transition: background-color .1s;
+}
+
+.fa-search {
+  transition: background-color .1s;
+}
+
+.search button:hover {
+  background-color: $color-secondary;
+}
+
+.fa-search:hover {
+  color: white;
+}

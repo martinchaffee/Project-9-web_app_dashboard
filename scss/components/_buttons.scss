@@ -1,3 +1,89 @@
 //============================================
 // Button Styles
 //============================================
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+  color: $color-text;
+}
+
+//--Traffic chart buttons------------------------
+.btn-line {
+  border-radius: 25px;
+  font-size: 0.7em;
+  transition: background-color .1s, color .1s;
+  color: rgba(78,86,93,0.7);
+  margin-left: 5px;
+  padding: 3px 10px;
+}
+
+.btn-line:hover,
+.btn-line:focus {
+  background-color: $color-secondary;
+  color: $white;
+}
+
+//----Send button ---------------------
+
+.go {
+  display: block;
+  width: 100%;
+  background-color: $color-primary;
+  color: $white;
+  text-transform: uppercase;
+  height: 2.5rem;
+  margin: .5rem auto;
+  border-radius: 4px;
+  transition: background-color .1s;
+  text-align: center;
+}
+
+button.go:hover {
+    background-color: $color-secondary;
+}
+
+//----Submit and Cancel buttons ---------------------
+
+.button-wrapper {
+  display: flex;
+  justify-content: space-between;
+  clear: left;
+}
+
+#save {
+  width: 45%;
+  background-color: $color-primary;
+  color: $white;
+  text-transform: uppercase;
+  height: 2.5rem;
+  margin: .5rem auto;
+  border-radius: 4px;
+  transition: background-color .1s;
+  text-align: center;
+  margin-left: 0;
+}
+
+#cancel {
+  background-color: $color-border;
+  transition: background-color .1s;
+  width: 45%;
+  color: $white;
+  text-transform: uppercase;
+  height: 2.5rem;
+  margin: .5rem auto;
+  border-radius: 4px;
+  transition: background-color .1s;
+  text-align: center;
+  margin-right: 0;
+}
+#save:hover {
+  background-color: $color-secondary;
+}
+
+#cancel:hover {
+  background-color: $color-warning;
+}

@@ -1,0 +1,43 @@
+//-----------Social Stats Styles---------------*/
+
+.soc-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.soc-badge {
+  background-color: $color-bg-light;
+  border: 1px solid $color-border;
+  border-radius: 3px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 70%;
+  margin: .5rem auto;
+}
+
+.soc-icon {
+  height: 2.5rem;
+  width: 2.5rem;
+  padding: .5rem;
+  background-color: $color-primary;
+  border-radius: 100%;
+  margin: .5rem;
+}
+
+
+
+.soc-stats {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 1rem 2rem;
+}
+
+.numbers {
+  font-size: 1.8em;
+  font-weight: 300;
+  color: rgba(102, 113, 123, 1);
+}

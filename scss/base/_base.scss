@@ -1,3 +1,55 @@
 //============================================
 // Base Styles
 //============================================
+
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: $color-text;
+}
+
+h1 {
+  font-size: 1em;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: .75rem;
+  text-transform: uppercase;
+  color: rgba(78,86,93,0.7);
+  margin: 1rem 0;
+}
+
+h3 {
+  color: $color-primary;
+  font-size: .9rem;
+  margin: auto;
+  display: inline-block;
+  margin-left: 0;
+}
+
+h4 {
+  font-size: .8rem;
+  padding-left: 1rem;
+  margin: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+input, select {
+ font-size: .8rem;
+}
