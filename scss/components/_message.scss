@@ -17,21 +17,12 @@ textarea::-webkit-input-placeholder {
 #message-user {
   margin: 0 auto;
   width: 100%;
-}
-
-#message-user input,
-#message-user textarea {
-  background-color: $color-bg;
-  border: 1px solid $color-border;
-  color: $color-text;
-  margin: .5rem auto;
-  border-radius: 4px;
-  padding: .5rem .5rem;
-  width: 100%;
-}
-
-
-#message-user textarea {
-  height: 10rem;
-  resize: none;
+  & input {
+    @include form-input;
+  }
+  & textarea {
+    @include form-input;
+    height: 10rem;
+    resize: none;
+  }
 }

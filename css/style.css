@@ -462,20 +462,24 @@ textarea::-webkit-input-placeholder {
 #message-user {
   margin: 0 auto;
   width: 100%; }
-
-#message-user input,
-#message-user textarea {
-  background-color: #e7e7e7;
-  border: 1px solid #b2b2b2;
-  color: #7f8a94;
-  margin: .5rem auto;
-  border-radius: 4px;
-  padding: .5rem .5rem;
-  width: 100%; }
-
-#message-user textarea {
-  height: 10rem;
-  resize: none; }
+  #message-user input {
+    background-color: #e7e7e7;
+    border: 1px solid #b2b2b2;
+    color: #7f8a94;
+    margin: .5rem auto;
+    border-radius: 4px;
+    padding: .5rem .5rem;
+    width: 100%; }
+  #message-user textarea {
+    background-color: #e7e7e7;
+    border: 1px solid #b2b2b2;
+    color: #7f8a94;
+    margin: .5rem auto;
+    border-radius: 4px;
+    padding: .5rem .5rem;
+    width: 100%;
+    height: 10rem;
+    resize: none; }
 
 section.settings {
   display: flex;
