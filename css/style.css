@@ -372,13 +372,12 @@ option#placeholder {
   margin: .5rem auto;
   border-radius: 3px; }
 
-.alert-text {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center; }
-
 .alert {
   padding: .5rem 1rem; }
+  .alert-text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; }
 
 #close {
   color: white;
@@ -390,11 +389,10 @@ option#placeholder {
   /*transition: all .3s ease-out;*/
   border: 1px solid transparent;
   border-radius: 100%; }
-
-#close:hover {
-  border: 1px solid;
-  background: white;
-  color: #565595; }
+  #close:hover {
+    border: 1px solid;
+    background: white;
+    color: #565595; }
 
 .new-members {
   padding-bottom: 1rem; }
@@ -583,13 +581,5 @@ a:link {
 
 input, select {
   font-size: .8rem; }
-
-/*-----------Media Queries for Large Screen Size---------------*/
-@media screen and (min-width: 1024px) {
-  .nav-icon {
-    height: 3rem;
-    width: 3rem;
-    padding: .5rem;
-    opacity: .6; } }
 
 /*# sourceMappingURL=style.css.map */
