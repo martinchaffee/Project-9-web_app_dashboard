@@ -6,7 +6,11 @@
 
 main {
   width: 100%;
+  @media screen and (min-width: 1024px) {
+    width: 92%;
+  }
 }
+
 
 section {
   width: 100%;
@@ -15,9 +19,23 @@ section {
   border-bottom: 1px solid $color-border;
 }
 
+@media screen and (min-width: 768px) {
+  section.messages,
+  section.settings {
+   border-bottom: none;
+  }
+}
 //
 
 //-------------Banner Styles------------------------
+
+@media screen and (min-width: 1024px) {
+  .wrapper-desktop {
+     display: flex;
+     height: 100%;
+     width: 100%;
+   }
+}
 
 .wrapper-top {
   display: flex;
@@ -38,6 +56,17 @@ section {
   width: 90%;
 }
 
+@media screen and (min-width: 768px) {
+  .wrapper {
+    display: flex;
+  }
+
+  .wrapper section:first-of-type {
+    border-right: 1px solid $color-border;
+  }
+}
+
+//Search Box Styling ------------------------------
 .search {
   display: flex;
   justify-content: space-between;

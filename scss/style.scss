@@ -1,9 +1,11 @@
 @import 'utilities/variables';
 
 @import 'layout/header',
-        'layout/containers';
+        'layout/containers',
+        'layout/chart';
 
 @import 'components/nav',
+        'components/icons',
         'components/buttons',
         'components/select-menu', //messing with arrow icon in select menu
         'components/switch',
@@ -30,47 +32,15 @@
   width: 30%;
 }
 
-.wrapper {
-  display: flex;
-}
-
-.wrapper section:first-of-type {
-  border-right: 1px solid $color-border;
-}
-
-section.messages,
-section.settings {
- border-bottom: none;
-}
 }
 /*-----------Media Queries for Large Screen Size---------------*/
+
 @media screen and (min-width: 1024px) {
-  .wrapper-desktop {
-     display: flex;
-     height: 100%;
-     width: 100%;
-   }
 
-   main {
-     width: 92%;
+   .nav-icon {
+     height: 3rem;
+     width: 3rem;
+     padding: .5rem;
+     opacity: .6;
    }
-
-   nav {
-     flex-direction: column;
-     height: auto;
-     justify-content: flex-start;
-     width: 8%;
-   }
-
-  .nav-icon {
-    height: 3rem;
-    width: 3rem;
-    padding: .5rem;
-    opacity: .6;
-  }
 }
-/*nav {
-  align-items: center;
-  justify-content: space-around;
-  height: 3rem;
-}*/
