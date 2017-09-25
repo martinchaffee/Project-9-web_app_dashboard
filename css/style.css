@@ -470,22 +470,20 @@ textarea::-webkit-input-placeholder {
     height: 10rem;
     resize: none; }
 
-section.settings {
+.settings {
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
-
-.settings label {
-  font-size: .8rem;
-  margin-bottom: .3rem;
-  display: flex;
-  flex-direction: column; }
-
-.settings form {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%; }
+  .settings label {
+    font-size: .8rem;
+    margin-bottom: .3rem;
+    display: flex;
+    flex-direction: column; }
+  .settings form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; }
 
 .soc-group {
   display: flex;
