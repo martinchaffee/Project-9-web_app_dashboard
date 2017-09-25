@@ -5,7 +5,7 @@
 // Main Content
 
 main {
-  width: 100%;
+  width: $max-width;
   @media screen and (min-width: $break-l) {
     width: 92%;
   }
@@ -13,7 +13,7 @@ main {
 
 
 section {
-  width: 100%;
+  width: $max-width;
   margin: 0 auto;
   padding: .75rem 1rem;
   border-bottom: 1px solid $color-border;
@@ -42,13 +42,13 @@ section.settings {
   @media screen and (min-width: $break-l) {
      display: flex;
      height: 100%;
-     width: 100%;
+     width: $max-width;
    }
 }
 
 .wrapper-top {
   display: flex;
-  width: 100%;
+  width: $max-width;
   justify-content: space-between;
   & h1 {
     padding: .3rem 1rem;

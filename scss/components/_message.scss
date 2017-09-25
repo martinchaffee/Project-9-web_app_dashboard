@@ -16,7 +16,7 @@ textarea::-webkit-input-placeholder {
 
 #message-user {
   margin: 0 auto;
-  width: 100%;
+  width: $max-width;
   & input {
     @include form-input;
   }
