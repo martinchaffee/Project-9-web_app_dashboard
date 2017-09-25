@@ -19,27 +19,20 @@ button {
   color: rgba(78,86,93,0.7);
   margin-left: 5px;
   padding: 3px 10px;
+  &:focus {
+    background-color: $color-secondary;
+    color: $white;
+  }
 }
 
-.btn-line:hover,
-.btn-line:focus {
-  background-color: $color-secondary;
-  color: $white;
-}
 
 //----Send button ---------------------
 
 .go {
+  background-color: $color-primary;
   display: block;
   width: 100%;
-  background-color: $color-primary;
-  color: $white;
-  text-transform: uppercase;
-  height: 2.5rem;
-  margin: .5rem auto;
-  border-radius: 4px;
-  transition: background-color .1s;
-  text-align: center;
+  @include btn
 }
 
 button.go:hover {
@@ -55,35 +48,22 @@ button.go:hover {
 }
 
 #save {
-  width: 45%;
+  @include btn;
   background-color: $color-primary;
-  color: $white;
-  text-transform: uppercase;
-  height: 2.5rem;
-  margin: .5rem auto;
-  border-radius: 4px;
-  transition: background-color .1s;
-  text-align: center;
+  width: 45%;
   margin-left: 0;
+  &:hover {
+    background-color: $color-secondary;
+  }
+
 }
 
 #cancel {
+  @include btn;
   background-color: $color-border;
-  transition: background-color .1s;
   width: 45%;
-  color: $white;
-  text-transform: uppercase;
-  height: 2.5rem;
-  margin: .5rem auto;
-  border-radius: 4px;
-  transition: background-color .1s;
-  text-align: center;
   margin-right: 0;
-}
-#save:hover {
-  background-color: $color-secondary;
-}
-
-#cancel:hover {
-  background-color: $color-warning;
+  &:hover {
+    background-color: $color-warning;
+  }
 }

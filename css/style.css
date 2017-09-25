@@ -175,16 +175,14 @@ button {
   color: rgba(78, 86, 93, 0.7);
   margin-left: 5px;
   padding: 3px 10px; }
-
-.btn-line:hover,
-.btn-line:focus {
-  background-color: #7cda96;
-  color: #fff; }
+  .btn-line:focus {
+    background-color: #7cda96;
+    color: #fff; }
 
 .go {
+  background-color: #6d6db6;
   display: block;
   width: 100%;
-  background-color: #6d6db6;
   color: #fff;
   text-transform: uppercase;
   height: 2.5rem;
@@ -202,8 +200,6 @@ button.go:hover {
   clear: left; }
 
 #save {
-  width: 45%;
-  background-color: #6d6db6;
   color: #fff;
   text-transform: uppercase;
   height: 2.5rem;
@@ -211,12 +207,13 @@ button.go:hover {
   border-radius: 4px;
   transition: background-color .1s;
   text-align: center;
+  background-color: #6d6db6;
+  width: 45%;
   margin-left: 0; }
+  #save:hover {
+    background-color: #7cda96; }
 
 #cancel {
-  background-color: #b2b2b2;
-  transition: background-color .1s;
-  width: 45%;
   color: #fff;
   text-transform: uppercase;
   height: 2.5rem;
@@ -224,13 +221,11 @@ button.go:hover {
   border-radius: 4px;
   transition: background-color .1s;
   text-align: center;
+  background-color: #b2b2b2;
+  width: 45%;
   margin-right: 0; }
-
-#save:hover {
-  background-color: #7cda96; }
-
-#cancel:hover {
-  background-color: #cf2020; }
+  #cancel:hover {
+    background-color: #cf2020; }
 
 .selectdiv {
   position: relative;
