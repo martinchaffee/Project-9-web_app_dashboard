@@ -1,0 +1,17 @@
+//============================================
+// Nav Styles
+//============================================
+
+nav {
+  background-color: $color-primary-dark;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 3rem;
+  @media screen and (min-width: $break-l) {
+    flex-direction: column;
+    height: auto;
+    justify-content: flex-start;
+    width: 8%;
+  }
+}

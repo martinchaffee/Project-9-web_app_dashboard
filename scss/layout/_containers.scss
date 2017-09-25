@@ -1,0 +1,99 @@
+//============================================
+//Container Styles
+//============================================
+
+// Main Content
+
+main {
+  width: $max-width;
+  @media screen and (min-width: $break-l) {
+    width: 92%;
+  }
+}
+
+
+section {
+  width: $max-width;
+  margin: 0 auto;
+  padding: .75rem 1rem;
+  border-bottom: 1px solid $color-border;
+}
+
+
+section.messages,
+section.settings {
+  @media screen and (min-width: $break-m) {
+    border-bottom: none;
+  }
+}
+//
+
+//-------------Banner Styles------------------------
+.wrapper {
+  @media screen and (min-width: $break-m) {
+    display: flex;
+    & section:first-of-type {
+      border-right: 1px solid $color-border;
+    }
+  }
+}
+
+.wrapper-desktop {
+  @media screen and (min-width: $break-l) {
+     display: flex;
+     height: 100%;
+     width: $max-width;
+   }
+}
+
+.wrapper-top {
+  display: flex;
+  width: $max-width;
+  justify-content: space-between;
+  & h1 {
+    padding: .3rem 1rem;
+  }
+}
+
+.wrapper-search {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: $color-bg;
+  border: 1px solid rgba(78,86,93,0.3);
+  width: 90%;
+}
+
+//Search Box Styling ------------------------------
+.search {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border: 1px solid $color-border;
+  border-radius: 4px;
+  margin-right: 1rem;
+  width: 90%;
+  & button {
+    padding: 0rem .5rem;
+    transition: background-color .1s;
+    &:hover {
+      background-color: $color-secondary;
+    }
+  }
+}
+
+#searchbox {
+  margin-right: .5rem;
+  height: 2rem;
+  width: 85%;
+  border: none;
+  background: transparent;
+  padding-left: .5rem;
+}
+
+.fa-search {
+  transition: background-color .1s;
+  &:hover {
+    color: white;
+  }
+}

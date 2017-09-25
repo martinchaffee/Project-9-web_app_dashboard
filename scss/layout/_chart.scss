@@ -1,0 +1,17 @@
+//============================================
+// Chart Styles
+//============================================
+
+.line-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chart-container {
+  display: flex;
+  position: relative;
+  margin: auto;
+  height: 40vh;
+  width: $max-width;
+}

@@ -1,0 +1,46 @@
+//-----------New Member Section---------------
+
+.new-members {
+  padding-bottom: 1rem;
+}
+
+.member {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(178, 178, 178, 0.5);
+  width: 95%;
+  &:last-child {
+    border-bottom: none;
+  }
+  &-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  &-profile {
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    margin: .75rem .5rem .75rem 0rem;
+  }
+  &-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: .5rem;
+  }
+  &-name {
+    font-size: .8rem;
+  }
+  &-email {
+    font-size: .75rem;
+    opacity: 0.4;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.date {
+  font-size: .75rem;
+}

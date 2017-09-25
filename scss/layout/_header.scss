@@ -1,0 +1,58 @@
+//============================================
+// Header Styles
+//============================================
+
+.header {
+  background: $color-primary;
+  color: $white;
+  font-weight: 300;
+  height: 5rem;
+  width: $max-width;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  & a {
+    transition: background-color .3s;
+    padding: .2rem;
+    border-radius: 3px;
+    &:hover {
+      background-color: $color-secondary;
+    }
+  }
+}
+
+.logo {
+  color: $white;
+  font-size: 1.2rem;
+  margin: 0rem 1rem;
+}
+
+.light {
+  font-weight: 100;
+  opacity: 0.7;
+}
+
+.user-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+.user-info {
+  display: flex;
+  align-items: center;
+  padding: 0rem 1rem;
+  border-left: 1px solid rgba(27,26,89,0.3);
+}
+
+.user-profile {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 100%;
+}
+
+.user-name {
+  padding: 0rem .5rem;
+  font-weight: 300;
+}

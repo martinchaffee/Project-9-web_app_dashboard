@@ -1,0 +1,22 @@
+//============================================
+// MIXINS ------------------------------------ /
+//============================================
+@mixin btn {
+  color: $white;
+  text-transform: uppercase;
+  height: 2.5rem;
+  margin: .5rem auto;
+  border-radius: 4px;
+  transition: background-color .1s;
+  text-align: center;
+}
+
+@mixin form-input {
+  background-color: $color-bg;
+  border: 1px solid $color-border;
+  color: $color-text;
+  margin: .5rem auto;
+  border-radius: 4px;
+  padding: .5rem .5rem;
+  width: $max-width;
+}

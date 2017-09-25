@@ -1,0 +1,28 @@
+/*-----------Message User Section---------------*/
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: $color-text;
+  padding-left: .75rem;
+  padding-top: .5rem;
+  font-family: 'Lato', sans-serif;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: $color-text;
+  font-family: 'Lato', sans-serif;
+}
+
+#message-user {
+  margin: 0 auto;
+  width: $max-width;
+  & input {
+    @include form-input;
+  }
+  & textarea {
+    @include form-input;
+    height: 10rem;
+    resize: none;
+  }
+}

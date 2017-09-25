@@ -1,0 +1,29 @@
+// VARIABLES ------------------------------------ /
+// Colors
+$white: #fff;
+
+$color-primary: rgba(109, 109, 182, 1); //For header, alert, graphs, socmed icons, newmemb email, send/save buttons, on toggles;
+$color-primary-light: lighten($color-primary, 10%);
+$color-primary-dark: rgba(33, 32, 111, 1); //For NavBar;
+
+$color-secondary: rgba(124, 218, 150, 1); //"tablets" graph data; active line button;
+$color-tertiary: rgba(111, 167, 184, 1); //"phones" graph data; line button hover
+
+$color-border: rgba(178, 178, 178, 1);
+
+$color-text: rgba(127, 138, 148, 1.0); //slate grey
+$color-bg: #e7e7e7; //medium grey; main searchbar background
+$color-bg-light: #efefef; //light grey; inactive text fields
+
+$color-warning: rgba(207, 32, 32, 1);
+//Fonts
+$font-stack-primary: 'Lato', sans-serif;
+$font-stack-secondary:  Trebuchet, Arial, sans-serif;
+
+// Layout
+$max-width: 100%;
+// $gutter: ; //use to set gutter margins
+
+// Breakpoints
+$break-m: 768px;
+$break-l: 1024px;
