@@ -505,6 +505,10 @@ section.settings {
   display: flex;
   flex-direction: column;
   justify-content: space-around; }
+  @media screen and (min-width: 768px) {
+    .soc-group {
+      flex-direction: row;
+      justify-content: space-around; } }
 
 .soc-badge {
   background-color: #efefef;
@@ -515,6 +519,9 @@ section.settings {
   align-items: center;
   width: 70%;
   margin: .5rem auto; }
+  @media screen and (min-width: 768px) {
+    .soc-badge {
+      width: 30%; } }
 
 .soc-icon {
   height: 2.5rem;
@@ -577,14 +584,6 @@ a:link {
 input, select {
   font-size: .8rem; }
 
-/*-----------Media Queries for Medium Screen Size---------------*/
-@media screen and (min-width: 768px) {
-  .soc-group {
-    flex-direction: row;
-    justify-content: space-around; }
-
-  .soc-badge {
-    width: 30%; } }
 /*-----------Media Queries for Large Screen Size---------------*/
 @media screen and (min-width: 1024px) {
   .nav-icon {
