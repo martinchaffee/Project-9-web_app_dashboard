@@ -1,0 +1,39 @@
+Still left to do:
+--Create the notification icon in the bell icon.
+--Icon left border on hover: extend to far left of nav bar
+--JS to submit message form and display a confirmation the message was sent.
+--Use JS to display error messages if user isn’t selected or message field is empty.
+
+For Exceeds:
+--Search function for message section
+--Add autocomplete to search for users box
+--Use local storage to save settings
+
+*************
+Moving forward:
+*************
+Can't put off JS any longer...
+1)--Create the notification icon in the bell icon--
+  I think this is going to have to be done with JS.
+    Will need to create a little green circle that sits in the upper right hand corner of
+    a div that icon-bell sits in.
+      --when icon-bell is clicked, another alert box appears
+      --closing the alert boxes causes the little green circle to disappear
+
+
+
+
+2)--JS to submit message form and display a confirmation the message was sent.
+
+3)--Use JS to display error messages if user isn’t selected or message field is empty.
+
+For Exceeds:
+
+4)--Search function for message section
+
+5)--Add autocomplete to search for users box
+
+6)--Use local storage to save settings
+  Review "Using Local storage with JS" video and figure this out
+
+    
