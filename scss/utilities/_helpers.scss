@@ -22,4 +22,22 @@
   right: 0;
   top: 0;
   transition: none;
+  display: flex;
+}
+
+#drop-down {
+  background-color: $color-bg;
+  width: 10rem;
+  border-radius: 2px;
+  position: absolute;
+  right: -7.5rem;
+  margin-top: .5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.drop-down-item {
+  font-size: .8rem;
+  color: $color-text;
+  padding: 2px;
 }

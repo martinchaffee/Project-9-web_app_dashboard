@@ -13,7 +13,7 @@ const monthlyCanvas = document.getElementById("traffic-monthly");
 const iconBell = document.getElementById("icon-bell");
 const notifyDot = document.getElementById("notify-dot");
   //Drop-down menu with notifications
-  const notifyMenu = document.getElementById('notification-menu');
+  const notifyMenu = document.getElementById('drop-down');
 
 
 // Alert div and button
