@@ -13,6 +13,7 @@ const monthlyCanvas = document.getElementById("traffic-monthly");
 const iconBell = document.getElementById("icon-bell");
 const notifyDot = document.getElementById("notify-dot");
   //Drop-down menu with notifications
+  const notifyMenu = document.getElementById('notification-menu');
 
 
 // Alert div and button
@@ -89,6 +90,10 @@ const hideAlert = () => {
 const hideDot = () => {
   notifyDot.style.display="none";
 }
+
+//Show notifyMenu
+const showNotifyMenu = () => {
+  notifyMenu.style.display="initial";
 
 
 // Show hourly chart at page load
