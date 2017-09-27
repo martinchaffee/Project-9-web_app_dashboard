@@ -161,16 +161,16 @@ nav {
     opacity: 1.0;
     border-left: 3px outset #7cda96; }
 
-.icon-bell {
+#icon-bell {
   position: relative;
   height: 1.5rem;
   width: 1.5rem;
   margin: 0rem 1rem;
   transition: background-color .3s; }
-  .icon-bell:hover {
+  #icon-bell:hover {
     background-color: #6fa7b8; }
   @media screen and (min-width: 1024px) {
-    .icon-bell {
+    #icon-bell {
       height: 1.75rem;
       width: 1.75rem; } }
 
