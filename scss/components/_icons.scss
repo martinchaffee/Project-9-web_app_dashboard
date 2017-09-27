@@ -16,9 +16,14 @@
 }
 
 .icon-bell {
+  position: relative;
   height: 1.5rem;
   width: 1.5rem;
   margin: 0rem 1rem;
+  transition: background-color .3s;
+  &:hover {
+    background-color: $color-tertiary;
+  }
   @media screen and (min-width: $break-l) {
     height: 1.75rem;
     width: 1.75rem;

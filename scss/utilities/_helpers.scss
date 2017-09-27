@@ -9,3 +9,17 @@
     clear: both;
   }
 }
+
+
+// JavaScript Elements Stylings
+
+#notify-dot {
+  background-color: $color-secondary;
+  height: .4rem;
+  width: .4rem;
+  border-radius: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: none;
+}

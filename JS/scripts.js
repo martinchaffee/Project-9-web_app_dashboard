@@ -9,6 +9,11 @@ const dailyCanvas = document.getElementById("traffic-daily");
 const weeklyCanvas = document.getElementById("traffic-weekly");
 const monthlyCanvas = document.getElementById("traffic-monthly");
 
+//Notification icon elements
+const iconBell = document.getElementById(".icon-bell");
+const notifyDot = document.querySelector(".notify-dot");
+const notifyMenu = document.create
+
 // Alert div and button
 const closeButton = document.getElementById('close');
 const alertDiv = document.getElementById("wrapper-alert");
@@ -74,6 +79,7 @@ const showMonthlyCanvas = () => {
   dailyButton.style.background="initial";
 }
 
+//Hide alertDiv
 const hideAlert = () => {
   alertDiv.style.display="none";
 }
@@ -89,3 +95,5 @@ monthlyButton.addEventListener('click',showMonthlyCanvas);
 
 // hide alert div when close button is clicked
 closeButton.addEventListener('click', hideAlert);
+
+// show alert divs when bell icon is clicked
