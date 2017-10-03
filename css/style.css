@@ -349,7 +349,8 @@ option#placeholder {
 
 #wrapper-alert {
   background-color: #6d6db6;
-  color: rgba(255, 255, 255, 0.8);
+  color: #fff;
+  opacity: 0.8;
   font-weight: 200;
   font-size: .8rem;
   display: flex;
@@ -368,7 +369,8 @@ option#placeholder {
     align-items: center; }
 
 .close, .modal-close {
-  color: #7cda96;
+  color: #fff;
+  opacity: 0.8;
   font-size: 1rem;
   padding: .2em .35em;
   margin: .5em;
@@ -377,18 +379,18 @@ option#placeholder {
   border: 1px solid transparent;
   border-radius: 100%; }
   .close:hover, .modal-close:hover {
-    color: #fff; }
+    opacity: 1; }
 
 .new-members {
   padding-bottom: 1rem; }
 
-.member {
+.member, .modal-alert-message {
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid rgba(178, 178, 178, 0.5);
   width: 95%; }
-  .member:last-child {
+  .member:last-child, .modal-alert-message:last-child {
     border-bottom: none; }
   .member-content {
     display: flex;
@@ -566,18 +568,28 @@ textarea::-webkit-input-placeholder {
   width: 80%;
   /* Could be more or less, depending on screen size */
   display: flex;
-  border: 1px solid white; }
-
-.close-wrapper {
-  border: 1px solid white; }
+  justify-content: space-between; }
 
 .model-alerts {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  width: 80%; }
+
+.modal-alert-message a {
+  color: #fff;
+  opacity: 0.8; }
+  .modal-alert-message a:hover {
+    opacity: 1; }
 
 /* The Close Button */
+.close-wrapper {
+  align-self: flex-end;
+  margin: auto;
+  margin-right: 0; }
+
 .modal-close {
-  float: right; }
+  float: right;
+  opacity: 0.8; }
   .modal-close:hover {
     cursor: pointer; }
 
@@ -616,8 +628,10 @@ h4 {
 ul {
   list-style: none; }
 
-a:link {
-  text-decoration: none; }
+a {
+  color: #7f8a94; }
+  a:link {
+    text-decoration: none; }
 
 input, select {
   font-size: .8rem; }

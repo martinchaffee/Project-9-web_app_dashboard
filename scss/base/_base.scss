@@ -46,9 +46,13 @@ ul {
   list-style: none;
 }
 
-a:link {
+a {
+  color: $color-text;
+  &:link {
   text-decoration: none;
+  }
 }
+
 
 input, select {
  font-size: .8rem;
