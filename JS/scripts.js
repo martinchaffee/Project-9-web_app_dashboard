@@ -13,12 +13,21 @@ const monthlyCanvas = document.getElementById("traffic-monthly");
 const iconBell = document.getElementById("icon-bell");
 const notifyDot = document.getElementById("notify-dot");
   //Drop-down menu with notifications
-  const notifyMenu = document.getElementById('drop-down');
+const notifyMenu = document.getElementById('drop-down');
 
 
 // Alert div and button
 const closeButton = document.getElementById('close');
 const alertDiv = document.getElementById("wrapper-alert");
+
+//Message Sent/ Message Failed variables
+const sendBtn = document.getElementById("send-btn");
+const messageForm = document.querySelector("#message-user");
+const messageSearchbox = messageForm.querySelector("input");
+const messageText = messageForm.querySelector("textarea");
+
+
+
 
 // functions for showing canvasses and changing button color and background
 const showHourlyCanvas = () => {
@@ -94,6 +103,8 @@ const hideDot = () => {
 //Show notifyMenu
 const showNotifyMenu = () => {
   notifyMenu.style.display="initial";
+}
+
 
 
 // Show hourly chart at page load
@@ -110,5 +121,14 @@ closeButton.addEventListener('click', hideAlert);
 
 // hide notifyDot when close button is clicked
 iconBell.addEventListener('click', hideDot);
+
+// Message sent or message failed alerts
+messageForm.addEventListener('submit', (e) => {
+  if (!!messageSearchbox.value === false || !!messageText.value === ""){
+    alert('Your message failed to send. \n \n Be sure both forms are completed and try again.');
+  } else {
+      alert('Your message has been sent');
+  }
+});
 
 // show alert divs when bell icon is clicked
