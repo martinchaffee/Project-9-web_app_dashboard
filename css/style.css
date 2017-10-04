@@ -384,13 +384,13 @@ option#placeholder {
 .new-members {
   padding-bottom: 1rem; }
 
-.member, .modal-alert-message {
+.member {
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid rgba(178, 178, 178, 0.5);
   width: 95%; }
-  .member:last-child, .modal-alert-message:last-child {
+  .member:last-child {
     border-bottom: none; }
   .member-content {
     display: flex;
@@ -573,13 +573,25 @@ textarea::-webkit-input-placeholder {
 .model-alerts {
   display: flex;
   flex-direction: column;
-  width: 80%; }
-
-.modal-alert-message a {
-  color: #fff;
-  opacity: 0.8; }
-  .modal-alert-message a:hover {
+  width: 90%; }
+  .model-alertsspan:hover {
     opacity: 1; }
+
+span.modal-alert-message {
+  padding: .5rem 0 .5rem 0;
+  font-size: .8rem;
+  width: 80%;
+  border-bottom: 1px solid #b2b2b2; }
+  span.modal-alert-message a {
+    width: 100%;
+    opacity: 0.8;
+    padding-bottom: .2rem; }
+    span.modal-alert-message a:hover {
+      opacity: 1; }
+  @media screen and (min-width: 1024px) {
+    span.modal-alert-message {
+      font-size: 1rem;
+      width: 50%; } }
 
 /* The Close Button */
 .close-wrapper {
@@ -629,7 +641,7 @@ ul {
   list-style: none; }
 
 a {
-  color: #7f8a94; }
+  color: #fff; }
   a:link {
     text-decoration: none; }
 
