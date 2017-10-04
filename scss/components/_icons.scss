@@ -2,9 +2,9 @@
 // Icon Styles
 //============================================
 .nav-icon {
-  height: 3rem;
-  width: 3rem;
-  padding: .5rem;
+  height: auto;
+  width: auto;
+  padding: 1rem 1.75rem 1rem 1.75rem;
   opacity: .6;
   transition: opacity 0.3s;
   transition: border-left 0.3s;
@@ -14,6 +14,11 @@
     border-left: 3px outset $color-secondary;
   }
 }
+.nav-icon-img{
+  height: 2rem;
+  width: 2rem;
+}
+
 
 #icon-bell {
   position: relative;
