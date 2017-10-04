@@ -140,9 +140,9 @@ nav {
       width: 8%; } }
 
 .nav-icon {
-  height: 3rem;
-  width: 3rem;
-  padding: .5rem;
+  height: auto;
+  width: auto;
+  padding: 1rem 1.75rem 1rem 1.75rem;
   opacity: .6;
   transition: opacity 0.3s;
   transition: border-left 0.3s;
@@ -150,6 +150,10 @@ nav {
   .nav-icon:hover {
     opacity: 1.0;
     border-left: 3px outset #7cda96; }
+
+.nav-icon-img {
+  height: 2rem;
+  width: 2rem; }
 
 #icon-bell {
   position: relative;
